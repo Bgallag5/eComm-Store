@@ -17,12 +17,3 @@ sequelize.sync({force: false }).then(() => {
   });
 })
 
-
-
-
-
-
-////TODO:
-///make a .env file with username password  --DONE
-////write columns for all Models  --- write associations in models/index.js  --- DONE?
-///write CRUD routes for :product-routes, tag-routes, and category-routes
