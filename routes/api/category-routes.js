@@ -43,7 +43,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   console.log(req.body);
   Category.create(req.body).then(() => {
-    Category.findAll({}).then(res.status(200).json(dbData))
+    Category.findAll({}).then(dbData => res.status(200).json(dbData))
   });
 });
 
